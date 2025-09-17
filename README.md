@@ -24,8 +24,6 @@
 
 ---
 
-## 🌐 Двуязычное описание / Bilingual Overview
-
 ### 🇷🇺 Русский
 
 #### ✨ До и После
@@ -83,3 +81,117 @@ cd autosort
 Step 2: Run the Magic
 bash python AutoSort.py
 ✅ Done. Your downloads are now beautifully organized.
+
+🔄 Автоматизация / Automation
+🇷🇺 Хотите, чтобы скрипт запускался каждый день? Используйте Планировщик заданий Windows:
+Откройте Планировщик заданий → Создать задачу
+Триггер: “Ежедневно в 20:00”
+Действие:
+Программа: python.exe
+Аргумент: путь к AutoSort.py
+🤖 Как невидимый дворецкий — убирает за вами, пока вы спите.
+
+🇺🇸 Want it to run every day automatically? Use Windows Task Scheduler:
+Open Task Scheduler → Create Task
+Trigger: “Daily at 8:00 PM”
+Action:
+Program: python.exe
+Arguments: C:\path\to\AutoSort.py
+🤖 Like a silent butler — cleaning your digital mess while you sleep.
+
+🛠️ Кастомизация / Customization
+🇷🇺 Добавьте свои категории — просто отредактируйте словарь EXTENSIONS в коде:
+python
+
+
+1
+2
+3
+4
+5
+⌄
+EXTENSIONS = {
+    "Design": [".psd", ".ai", ".fig"],
+    "Ebooks": [".epub", ".mobi"],
+    "Scripts": [".py", ".js", ".bat"],
+}
+❓ Что значит “Поддержка конфиг-файла”?
+Сейчас категории жёстко прописаны в коде. “Поддержка конфиг-файла” означает, что вы сможете вынести настройки (типы файлов, названия папок) в отдельный файл config.json — и менять их без открытия кода. Пример:
+
+json
+
+
+1
+2
+3
+4
+⌄
+{
+  "Images": [".jpg", ".png"],
+  "MyFolder": [".myext"]
+}
+Это удобно для пользователей, не умеющих программировать.
+
+🇺🇸 Add your own categories — just edit the EXTENSIONS dictionary:
+python
+
+
+1
+2
+3
+4
+5
+⌄
+EXTENSIONS = {
+    "Design": [".psd", ".ai", ".fig"],
+    "Ebooks": [".epub", ".mobi"],
+    "Scripts": [".py", ".js", ".bat"],
+}
+❓ What is “Config File Support”?
+Currently, categories are hardcoded. “Config file support” means you can move settings (file types, folder names) into a separate config.json file — and change them without touching the code. Example:
+
+json
+'''bash
+{
+  "Images": [".jpg", ".png"],
+  "MyFolder": [".myext"]
+}
+bash'''
+Great for non-programmers or frequent customization.
+
+📦 Требования / Requirements
+✅ Python 3.6+ (установлен почти везде)
+✅ Нет внешних зависимостей — только os и shutil
+✅ Работает на Windows, macOS, Linux
+✅ Python 3.6+ (pre-installed on most systems)
+✅ No external libraries — pure os and shutil
+✅ Works on Windows, macOS, Linux
+🌟 Почему это нравится людям / Why People Love This
+🇷🇺 «Тратил 10 минут в день на уборку загрузок. Теперь — 0. Этот скрипт вернул мне 60+ часов в год.» — Анонимный пользователь
+🇺🇸 “I used to waste 10 mins/day cleaning downloads. Now? Zero. This script gave me back 60+ hours a year.” — Anonymous User
+
+🇷🇺 «Так просто, но так приятно запускать. Как цифровой ASMR.» — Пользователь Reddit
+🇺🇸 “So simple, yet so satisfying to run. Like digital ASMR.” — Reddit User
+
+📜 Лицензия / License
+MIT — Делайте что хотите. Только не вините меня, если ваш кот научится программировать.
+MIT — Do whatever you want. Just don’t blame me if your cat learns to code.
+
+Полная лицензия → LICENSE
+Full License → LICENSE
+
+☕ Поддержать автора / Support the Author
+Если скрипт сэкономил вам время или нервы — можно поддержать автора:
+If this saved you time, sanity, or both — consider buying me a coffee:
+
+Buy Me a Coffee
+
+<div align="center">
+<img src="https://media.giphy.com/media/3o7TKsQ8UQIzIwNklG/giphy.gif" width="300" alt="Folder Magic">
+<br>
+<em>Потому что даже папки заслуживают немного магии ✨ / Because even folders deserve a little magic ✨</em>
+</div>
+
+🧹 🇷🇺 «Цивилизация измеряется не технологиями — а тем, сколько рутины она устраняет.»
+🧹 🇺🇸 “Civilization is measured not by its tech — but by how much routine it eliminates.”
+— Скорее всего, это будешь ты, очень скоро™ / — Probably You, Soon™
