@@ -52,7 +52,6 @@
 
 ##### Шаг 1: Клонируйте или скачайте
 
-```bash
 git clone https://github.com/yourusername/autosort.git
 cd autosort python AutoSort.py
 
